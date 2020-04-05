@@ -1,0 +1,17 @@
+doctype html 
+html  
+    head
+        link(rel="stylesheet", href="styles/main.css")
+        meta(charset="utf-8")
+    body
+        include sections/footer.pug
+        mixin title(name)
+            h2.title=name
+        mixin subtitle(name)
+            h4.subtitle=name
+        .p1
+            +title('paz')
+        .p2
+            +title('dva')
+        .p3
+            +subtitle('tri')    
